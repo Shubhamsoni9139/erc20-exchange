@@ -1,3 +1,5 @@
+/* Home.module.css */
+
 .container {
   padding: 0 2rem;
 }
@@ -10,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .footer {
@@ -108,9 +111,34 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+/* New styles for the Sign in using MetaMask button */
+.body__container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__container {
+  text-align: center;
+  background-color: black;
+}
+
+.home__button {
+  background: linear-gradient(to right, #4e74de, #9561e2);
+  color: white;
+  padding: 15px 30px; 
+  font-size: 18px; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.home__button:hover {
+  background: linear-gradient(to right, #9561e2, #4e74de);
 }
